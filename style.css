@@ -1,0 +1,76 @@
+h1{
+    font-variant: small-caps;
+    font-style: bold;
+    font-size: 25px;
+    color: #c62828;
+}
+
+.photo_hockey{
+    width: 60%;
+    align-items: center;
+}
+
+body{
+    display: grid;
+	grid-template-areas: 
+    "aside header header"
+    "aside section section"
+    "aside footer footer";
+	grid-template-rows: 80px 1fr 50px;
+	grid-template-columns: 15% 1fr 18%;
+	grid-gap: 5px;
+    height: 100vh;
+    margin: 10px;  
+}
+
+header, nav, section, .sidebar, footer {
+	padding: 5px;
+}
+
+header{
+    grid-area: header;
+}
+
+.sidebar{
+    grid-area: aside;
+    background: #c62828;
+}
+
+section_job, section_training{
+    grid-area: section;
+}
+
+section_reference{
+    grid-area: footer;
+}
+
+body{
+    display: grid;
+	grid-template-areas: 
+    "aside header header"
+    "aside section section"
+    "aside footer footer";
+	grid-template-rows: 80px 1fr 50px;
+	grid-template-columns: 15% 1fr 18%;
+	grid-gap: 5px;
+    height: 100vh;
+    margin: 10px;  
+}
+
+header, section, .sidebar, footer {
+	padding: 5px;
+}
+
+header, section, footer{
+    margin-left: 50px;
+}
+
+.contact, .about, .hobbies{
+    text-align: center;
+}
+
+.contact ul{
+    list-style: none;
+    text-align: left;
+}
+
