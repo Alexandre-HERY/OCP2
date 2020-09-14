@@ -126,3 +126,8 @@ header, section, footer{
     margin-bottom: 40px;
 }
 
+.reference{
+    display: flex;
+    justify-content: space-evenly;
+}
+
