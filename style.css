@@ -42,7 +42,10 @@ hr{
     display: flex;
     justify-content: space-between;
 }
-   
+
+.icon_margin{
+    min-width: 400px;
+}
    
 .photo_hockey{
     width: 60%;
@@ -113,4 +116,14 @@ header, section, footer{
     margin-left: 5%;
 }
 
+.about{
+    margin-bottom: 170px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
+.contact{
+    margin-bottom: 40px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
