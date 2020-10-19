@@ -44,7 +44,7 @@ hr{
 }
 
 .icon_margin{
-    min-width: 300px;
+    min-width: 230px;
 }
    
 .photo_hockey{
@@ -71,10 +71,11 @@ body{
 	grid-template-columns: 20% 1fr 18%;
 	grid-gap: 5px;
     row-gap: 120px;
-    height: 100vh;
-    margin: 10px;
     background-color: EEEEEE;
-
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
 }
 
 header{
@@ -119,7 +120,7 @@ header, section, footer{
 }
 
 .about{
-    margin-bottom: 170px;
+    margin-bottom: 100px;
 }
 
 .contact{
@@ -131,3 +132,6 @@ header, section, footer{
     justify-content: space-evenly;
 }
 
+ul{
+    list-style-type: none;
+}
