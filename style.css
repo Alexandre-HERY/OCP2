@@ -61,6 +61,10 @@ hr{
     margin-right: 15%;   
 }
 
+.photo_header{
+    display: none;
+}
+
 body{
     display: grid;
 	grid-template-areas: 
@@ -111,6 +115,7 @@ header, section, footer {
 
 header, section, footer{
     margin-left: 50px;
+    margin-right: 50px;
 }
 
 .aside_content, .hobbies p{
@@ -134,4 +139,55 @@ header, section, footer{
 
 ul{
     list-style-type: none;
+}
+
+/* RESOLUTION SMARTPHONE DEBUT */
+
+@media all and (max-device-width: 500px) {
+
+.sidebar{
+    display: none;
+}
+
+body{
+    display: block;
+    font-size: xx-large;
+}
+
+.photo_header{
+    background-color: #BCAAA4;
+    padding: 1%;
+    width: 98%;
+    margin-left: 0px;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.photo_header img{
+    width: 35%;
+    border: 3px solid #black;
+    border-radius: 50%;
+}
+
+h1{
+    font-size: 350%;
+}
+
+.main_content, .job, .reference_icon{
+    margin-top: 100px;
+}
+    
+    
+}
+
+/* RESOLUTION SMARTPHONE FIN */
+
+/* RESOLUTION TABLETTE DEBUT */
+
+@media all and (max-device-width: 1020px){
+
+.photo_header{
+    display: block;
+}
+    
 }
