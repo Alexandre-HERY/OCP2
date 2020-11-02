@@ -1,8 +1,37 @@
+/* FONT */
+
+@font-face{
+  font-family: 'Montserrat-Light';
+  src: url('Montserrat-Light.eot'),
+       url('Montserrat-Light.otf'),
+       url('Montserrat-Light.svg'),
+       url('Montserrat-Light.ttf'),
+       url('Montserrat-Light.woff'),
+       url('Montserrat-Light.woff2'); 
+}
+@font-face{
+  font-family: 'Montserrat-Bold';
+  src: url('Montserrat-Bold.eot'),
+       url('Montserrat-Bold.otf'),
+       url('Montserrat-Bold.svg'),
+       url('Montserrat-Bold.ttf'),
+       url('Montserrat-Bold.woff'),
+       url('Montserrat-Bold.woff2'); 
+}
+
+/* FIN FONT */
+
+
+h1, h2, h3, h4, li span{
+    font-family: Montserrat-Bold;
+    font-variant: small-caps;
+}
+
+
 
 h1{
-    font-variant: small-caps;
-    font-style: bold;
-    font-size: 25px;
+    font-size: 35px;
+    margin-bottom: 0;
 }
 
 h1 span{
@@ -16,9 +45,10 @@ h2 span{
 
 h2{
     margin-bottom: 15px;
+    margin-top: 0;
 }
 
-#aside h3{
+#aside h4{
     margin-left: 0;
     margin-top: 1%;
     padding-top: 1%;
@@ -37,12 +67,13 @@ hr{
 }
 
 .training_icon{
-    text-align: start;
+    display: flex;
+    justify-content: space-between;
 }
-.training_icon span{
-    margin-left: 2.5%;
+
+.icon_margin{
+    min-width: 230px;
 }
-   
    
 .photo_hockey{
     width: 60%;
@@ -51,11 +82,15 @@ hr{
         border-top-right-radius: 50%;
         border-bottom-left-radius: 50%;
         border-bottom-right-radius: 50%;
-    border: 1px solid #212121;
+    border: 3px solid #212121;
     margin-top: 15%;
     margin-bottom: 15%;
     margin-left: 19%;
     margin-right: 15%;   
+}
+
+.photo_header{
+    display: none;
 }
 
 body{
@@ -68,14 +103,16 @@ body{
 	grid-template-columns: 20% 1fr 18%;
 	grid-gap: 5px;
     row-gap: 120px;
-    height: 100vh;
-    margin: 10px;
     background-color: EEEEEE;
-
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
 }
 
 header{
     grid-area: header;
+    margin-top: 75px;
 }
 
 .sidebar{
@@ -91,11 +128,12 @@ section_reference{
     grid-area: footer;
 }
 
-.training_formation{
+.training_formation, .job_icon, .reference_icon{
     border-bottom: 3px solid #c62828;
+    margin-bottom: 3px;
 }
 
-.training_formation i{
+.training_formation i, .job_icon i, .reference_icon i{
     color: #c62828;
 }
 
@@ -105,14 +143,96 @@ header, section, footer {
 
 header, section, footer{
     margin-left: 50px;
+    margin-right: 50px;
 }
 
-.contact p, .about p, .hobbies p{
+.aside_content, .hobbies p{
     text-align: left;
-    margin-left: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.main_content{
-    padding-left: 10%;
+.about{
+    margin-bottom: 100px;
 }
+
+.contact{
+    margin-bottom: 40px;
+}
+.contact_smart{
+    display: none;
+}
+.reference{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* RESOLUTION SMARTPHONE DEBUT */
+
+@media all and (max-device-width: 1020px) {
+
+.sidebar{
+    display: none;
+}
+
+body{
+    display: block;
+    font-size: xx-large;
+}
+
+.contact_smart{
+    display: block;
+    text-align: center;
+    background-color: #BCAAA4;
+    
+    
+}
+
+.aside_content{
+    text-align: center;
+}
+.aside_content p span{
+    font-weight: bold;
+}
+
+.photo_header{
+    background-color: #BCAAA4;
+    padding: 1%;
+    width: 98%;
+    margin-left: 0px;
+    margin-top: 0px;
+    text-align: center;
+    display: block;
+}
+
+.photo_header img{
+    width: 35%;
+    border: 5px solid #212121;
+    border-radius: 50%;
+}
+
+h1{
+    font-size: 150%;
+}
+h2, h3{
+    font-size: 60%;
+}
+h4{
+    background-color: #212121;
+    color: #c62828;
+}
+
+.main_content, .job, .reference_icon{
+    margin-top: 100px;
+}
+    
+    
+}
+
+/* RESOLUTION SMARTPHONE ET TABLETTE FIN */
+
 
