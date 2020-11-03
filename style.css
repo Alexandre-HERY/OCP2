@@ -1,8 +1,36 @@
+/* FONT */
+
+@font-face{
+  font-family: 'Montserrat-Light';
+  src: url('Montserrat-Light.eot'),
+       url('Montserrat-Light.otf'),
+       url('Montserrat-Light.svg'),
+       url('Montserrat-Light.ttf'),
+       url('Montserrat-Light.woff'),
+       url('Montserrat-Light.woff2'); 
+}
+@font-face{
+  font-family: 'Montserrat-Bold';
+  src: url('Montserrat-Bold.eot'),
+       url('Montserrat-Bold.otf'),
+       url('Montserrat-Bold.svg'),
+       url('Montserrat-Bold.ttf'),
+       url('Montserrat-Bold.woff'),
+       url('Montserrat-Bold.woff2'); 
+}
+
+/* FIN FONT */
+
+
+h1, h2, h3, h4, li span{
+    font-family: Montserrat-Bold;
+    font-variant: small-caps;
+}
+
+
 
 h1{
-    font-variant: small-caps;
-    font-style: bold;
-    font-size: 25px;
+    font-size: 35px;
     margin-bottom: 0;
 }
 
@@ -54,7 +82,7 @@ hr{
         border-top-right-radius: 50%;
         border-bottom-left-radius: 50%;
         border-bottom-right-radius: 50%;
-    border: 1px solid #212121;
+    border: 3px solid #212121;
     margin-top: 15%;
     margin-bottom: 15%;
     margin-left: 19%;
@@ -131,7 +159,9 @@ header, section, footer{
 .contact{
     margin-bottom: 40px;
 }
-
+.contact_smart{
+    display: none;
+}
 .reference{
     display: flex;
     justify-content: space-evenly;
@@ -143,7 +173,7 @@ ul{
 
 /* RESOLUTION SMARTPHONE DEBUT */
 
-@media all and (max-device-width: 500px) {
+@media all and (max-device-width: 1020px) {
 
 .sidebar{
     display: none;
@@ -154,6 +184,21 @@ body{
     font-size: xx-large;
 }
 
+.contact_smart{
+    display: block;
+    text-align: center;
+    background-color: #BCAAA4;
+    
+    
+}
+
+.aside_content{
+    text-align: center;
+}
+.aside_content p span{
+    font-weight: bold;
+}
+
 .photo_header{
     background-color: #BCAAA4;
     padding: 1%;
@@ -161,16 +206,24 @@ body{
     margin-left: 0px;
     margin-top: 0px;
     text-align: center;
+    display: block;
 }
 
 .photo_header img{
     width: 35%;
-    border: 3px solid #black;
+    border: 5px solid #212121;
     border-radius: 50%;
 }
 
 h1{
-    font-size: 350%;
+    font-size: 150%;
+}
+h2, h3{
+    font-size: 60%;
+}
+h4{
+    background-color: #212121;
+    color: #c62828;
 }
 
 .main_content, .job, .reference_icon{
@@ -180,14 +233,6 @@ h1{
     
 }
 
-/* RESOLUTION SMARTPHONE FIN */
+/* RESOLUTION SMARTPHONE ET TABLETTE FIN */
 
-/* RESOLUTION TABLETTE DEBUT */
 
-@media all and (max-device-width: 1020px){
-
-.photo_header{
-    display: block;
-}
-    
-}
